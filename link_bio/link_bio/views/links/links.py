@@ -7,5 +7,8 @@ def links() -> rx.Component:
         link_button("Dewoitine D.520 1/48 Tamiya"),
         link_button("Macchi C.202 Folgore 1/48 Hasegawa"),
         link_button("SPAD XIII 1/48 Eduard"),
+        align = "center",
+        width = "100%",
+        text_align = "center"
     )
     
