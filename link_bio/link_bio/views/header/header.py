@@ -3,11 +3,11 @@ import reflex as rx
 def header() -> rx.Component:
     return rx.vstack(
             rx.avatar(
-                fallback="CP", 
+                fallback="BC", 
                 size = "5", 
-                variant = "solid",
+                variant = "soft",
                 spacing = "2"),
-            rx.text("Hola mi nombre es Carlos Perez"),
+            rx.text("Bienvenido a la página de mis proyectos, unos acabados y otros en proceso."),
             align = "center",
             width = "100%",
             text_align = "center"

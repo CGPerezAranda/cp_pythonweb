@@ -17,6 +17,7 @@ def index() -> rx.Component:
                 header(),
                 separator("Mis maquetas"),
                 links(), 
+                separator("Mis Teclados"),
                 max_width = "800px",
                     width = "80%",
                 ),        
