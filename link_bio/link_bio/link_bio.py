@@ -3,6 +3,7 @@ from link_bio.components.navbar import navbar
 from link_bio.views.header.header import header
 from link_bio.views.links.links import links
 from link_bio.components.separator import separator
+from link_bio.components.footer import footer
 
 class State(rx.State):
     pass
@@ -19,6 +20,7 @@ def index() -> rx.Component:
                 max_width = "800px",
                     width = "80%",
                 ),        
+                footer(),
             align = "center",
             width = "100%",
             text_align = "center"
