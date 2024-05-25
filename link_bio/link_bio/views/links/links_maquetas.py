@@ -1,7 +1,7 @@
 import reflex as rx
 from link_bio.components.link_button import link_button
 
-def links() -> rx.Component:
+def links_maquetas() -> rx.Component:
     return rx.vstack(
         link_button("TBM-3 Avenger 1/48 Academy (ex Accurate Miniatures)", "https://imgur.com/gallery/tbm-3-avenger-1-48-academy-ex-accurate-1qcYWbs"),
         link_button("Dewoitine D.520 1/48 Tamiya", "https://imgur.com/gallery/tamiya-1-48-dewoitine-d-520-S0IPNEW"),
