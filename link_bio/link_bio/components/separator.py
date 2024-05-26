@@ -5,7 +5,7 @@ def separator(text: str) -> rx.Component:
     return rx.heading(   
                 rx.text(
                     text, 
-                    size = styles.TextSize.DEFAULT.value
+                    style = styles.title_style,
                     ),
                 style =  styles.separator_style,    
     )
