@@ -6,11 +6,11 @@ def header() -> rx.Component:
         rx.hstack(
                 rx.vstack(
                     rx.avatar(
-                        fallback="CP", 
+                        fallback="CGP", 
                         size = "5", 
                         variant = "soft",
                         spacing = "2"),
-                    rx.text("@CarlosPerez", size = "2"),
+                    rx.text("@CGPerez", size = "2"),
                 ),
                 rx.hstack(
                     link_icon("https://x.com/CGperezAr", "twitter"),
@@ -21,7 +21,7 @@ def header() -> rx.Component:
         ),
         rx.text("""Mi nombre es Carlos. Me gustan las maquetas de plástico, especialmente de aviones, 
                     pasear por el campo con mi perra y mi mujer, los teclados mecánicos y la programación. 
-                    Soy economista y estudiante de 4° curso de Ingeniería Informática .""", 
+                    Soy economista y estudiante de 4° curso de Ingeniería Informática.""", 
                     align = "left"),
         align = "center",
         width = "100%",
