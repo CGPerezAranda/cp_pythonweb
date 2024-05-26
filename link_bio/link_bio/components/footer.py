@@ -3,25 +3,38 @@ import random as rd
 
 
 def footer() -> rx.Component:
-    random_number = rd.randint(0, 25)
-    return rx.hstack(
+    random_number = rd.randint(1, 26)
+    return rx.vstack(
         rx.link(
             rx.image(
                 src=f"/images/Giligingles/Giligingle ({random_number}).jpg",
                 width="300px",
                 height="auto"
             ),
-            href = "https://imgur.com/a/0MMOu6E"
+            href = "https://imgur.com/a/0MMOu6E",
+            is_external=1
+            
         ),
-        rx.vstack(
+        rx.hstack(
             rx.link(
                 rx.image(
                     src="/github.jpg", 
                     width="100px",
                     height="auto"
                 ),
-                href="https://github.com/CGPerezAranda?tab=repositories"
+                href="https://github.com/CGPerezAranda?tab=repositories",
+                is_external=1
+            ),
+            rx.link(
+                rx.image(
+                    src="/gitlab.png", 
+                    width="100px",
+                    height="auto"
+                ),
+                href = "https://gitlab.com/CGPerezAranda/python-web",
+                is_external=1
             ),
             rx.text("© 2024 - BC")
-        )
+        )  
     )
+    

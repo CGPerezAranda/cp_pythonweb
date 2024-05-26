@@ -6,6 +6,7 @@ from link_bio.views.links.links_teclados import links_teclados
 from link_bio.components.separator import separator
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles
+from link_bio.styles.styles import Size as Size
 
 
 class State(rx.State):
@@ -23,7 +24,7 @@ def index() -> rx.Component:
                 separator("Mis Teclados"),
                 links_teclados(),
                 max_width = styles.MAX_WIDTH,
-                margin_y = styles.Spacer.LARGE.value
+                margin_y = styles.Size.LARGE.value
                 ),        
                 footer(),
             align = "center",
@@ -32,6 +33,8 @@ def index() -> rx.Component:
         )
     )
 
-app = rx.App()
+app = rx.App(
+    style = styles.BASE_STYLE,
+)
 app.add_page(index)
  

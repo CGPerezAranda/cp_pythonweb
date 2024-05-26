@@ -1,13 +1,11 @@
 import reflex as rx
-
+import link_bio.styles.styles as styles
 
 def separator(text: str) -> rx.Component:
-    return rx.center(
-        
-                rx.text(text),
-                border_radius="15px",
-                border_width="thick",
-                width="100%",
-                background_image= "https://upload.wikimedia.org/wikipedia/commons/d/d6/TBF_early1942.jpg"
-            
+    return rx.heading(   
+                rx.text(
+                    text, 
+                    size = styles.TextSize.DEFAULT.value
+                    ),
+                style =  styles.separator_style,    
     )
