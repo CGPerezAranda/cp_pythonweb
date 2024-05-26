@@ -6,6 +6,13 @@ from .colors import Text_colors
 #constansts
 MAX_WIDTH = "700px"
 
+STYLESHEETS = [
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap",
+    "https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Manrope&display=swap",
+    "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap",
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
+]
+
 #Spacers
 class Spacer(Enum):
     VSMALL = "0.3em"

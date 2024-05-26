@@ -7,15 +7,21 @@ def navbar() -> rx.Component:
     return rx.hstack(
         rx.box(
             rx.text(
-                "Carlos",
+                "CARLOS",
                 color = Text_colors.IDENT1.value,
                 as_ = "span",
+                font_family = "Manrope",
+                font_weight = "500",
+                
             ),
             rx.text(
-                "Pérez",
+                "PEREZ",
                 color = Text_colors.IDENT2.value,
                 as_ = "span",
+                font_family = "Manrope",
+                font_weight = "500",
             ),
+            
 
         ),
         position="sticky",
