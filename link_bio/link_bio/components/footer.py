@@ -2,6 +2,7 @@ import reflex as rx
 import random as rd
 from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import Text_colors as Text_colors
+from link_bio.styles.styles import IconSize as IconSize
 import link_bio.styles.styles as styles
 
 
@@ -22,8 +23,8 @@ def footer() -> rx.Component:
             rx.link(
                 rx.image(
                     src="/github.jpg", 
-                    width="100px",
-                    height="auto"
+                    height="80px",
+                    width="auto"
                 ),
                 href="https://github.com/CGPerezAranda?tab=repositories",
                 is_external=1
@@ -31,23 +32,24 @@ def footer() -> rx.Component:
             rx.link(
                 rx.image(
                     src="/gitlab.png", 
-                    width="100px",
-                    height="auto"
+                    height="80px",
+                    width="auto"
                 ),
                 href = "https://gitlab.com/CGPerezAranda/python-web",
                 is_external=1
             ),
-            rx.vstack(
-                rx.text(
-                    "© 2024 - BC",
-                    font_size = Size.MEDIUM.value,
-                    color = Text_colors.FOOTER.value,
-                ),
-            ),            
+            rx.avatar(
+                src="/avatar.ico", 
+                height="80px",
+                width="auto"
+                ),  
+            ),        
+        rx.text(
+            "© 2024 - BC",
+            font_size = Size.MEDIUM.value,
+            color = Text_colors.FOOTER.value,
+            ),                  
             align = "center",
-        ),
-        margin_bottom = Size.LARGE.value,
-        align = "center",
-        width = "100%",
-    )
-    
+            width = "100%", 
+        )
+
