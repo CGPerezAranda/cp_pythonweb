@@ -11,7 +11,11 @@ def header() -> rx.Component:
                     fallback="CP", 
                     size = "5", 
                     variant = "soft",
-                    spacing = "2"),
+                    spacing = "2",
+                    src = "/avatar1.jpg",
+                    radius = "full",
+                    border = "2",
+                    ),
                 rx.vstack(
                     rx.hstack(
                         link_icon("https://x.com/CGperezAr", "twitter"),
