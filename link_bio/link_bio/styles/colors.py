@@ -5,6 +5,7 @@ class Color(Enum):
     SECONDARY = "#626e6b"
     BACKGROUND = "#1a1c1c"
     CONTENT = "#343a40"
+    FANCYBUTTON1 = "#75ffd3"
 
 
 class Text_colors(Enum):
@@ -13,3 +14,5 @@ class Text_colors(Enum):
     FOOTER = "#9fdffc"
     IDENT1 = "#5aad9e"
     IDENT2 = "#caecfc"
+    
+

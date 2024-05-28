@@ -2,27 +2,22 @@ import reflex as rx
 import random as rd
 from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import Text_colors as Text_colors
+from link_bio.styles.colors import Color as Color
 from link_bio.styles.styles import IconSize as IconSize
 import link_bio.styles.styles as styles
+from link_bio.components.countstate import giligingle as giligingle
 
 
 def footer() -> rx.Component:
     random_number = rd.randint(1, 26)
     return rx.vstack(
-        rx.link(
-            rx.image(
-                src=f"/images/Giligingles/Giligingle ({random_number}).jpg",
-                width = Size.PHOTO.value,
-                height="auto"
-            ),
-            href = "https://imgur.com/a/0MMOu6E",
-            is_external=1
-            
+        rx.hstack(
+            giligingle(),
         ),
         rx.hstack(
             rx.link(
                 rx.image(
-                    src="/github.jpg", 
+                    src="/github.jpg",
                     height="80px",
                     width="auto"
                 ),
@@ -31,25 +26,19 @@ def footer() -> rx.Component:
             ),
             rx.link(
                 rx.image(
-                    src="/gitlab.png", 
+                    src="/gitlab.png",
                     height="80px",
                     width="auto"
                 ),
-                href = "https://gitlab.com/CGPerezAranda/python-web",
+                href="https://gitlab.com/CGPerezAranda/python-web",
                 is_external=1
             ),
-            rx.avatar(
-                src="/avatar.ico", 
-                height="80px",
-                width="auto"
-                ),  
-            ),        
+        ),
         rx.text(
             "© 2024 - BC",
-            font_size = Size.MEDIUM.value,
-            color = Text_colors.FOOTER.value,
-            ),                  
-            align = "center",
-            width = "100%", 
-        )
-
+            font_size=Size.MEDIUM.value,
+            color=Text_colors.FOOTER.value,
+        ),
+        align="center",
+        width="100%",
+    )
