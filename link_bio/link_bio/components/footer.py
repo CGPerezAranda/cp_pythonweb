@@ -33,7 +33,6 @@ def footer() -> rx.Component:
                 href="https://gitlab.com/CGPerezAranda/python-web",
                 is_external=1
             ),
-<<<<<<< HEAD
         ),
         rx.text(
             "© 2024 - BC",
@@ -43,15 +42,3 @@ def footer() -> rx.Component:
         align="center",
         width="100%",
     )
-=======
-        ),        
-        rx.text(
-            "© 2024 - CGP",
-            font_size = Size.MEDIUM.value,
-            color = Text_colors.FOOTER.value,
-            ),                  
-            align = "center",
-            width = "100%", 
-        )
-
->>>>>>> eaa4142a7a28b5b47ff0b5750fa486c029bf05e6

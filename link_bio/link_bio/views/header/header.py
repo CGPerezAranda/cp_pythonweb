@@ -7,7 +7,6 @@ from link_bio.styles.colors import Text_colors as Text_colors
 def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-<<<<<<< HEAD
             rx.avatar(
                 src="/avatar.ico",
                 height="80px",
@@ -28,32 +27,6 @@ def header() -> rx.Component:
                 
                 align = "start",
             ),            
-=======
-                rx.avatar(
-                    fallback="CP", 
-                    size = "5", 
-                    variant = "soft",
-                    spacing = "2",
-                    src = "/avatar1.jpg",
-                    radius = "full",
-                    border = "2",
-                    ),
-                rx.vstack(
-                    rx.hstack(
-                        link_icon("https://x.com/CGperezAr", "twitter"),
-                        link_icon("https://www.instagram.com/cg.perezaranda/", "instagram"),
-                        link_icon("https://www.linkedin.com/in/carlos-p%C3%A9rez-aranda-b157a834/", "linkedin"),
-                    ),
-                    rx.text(
-                        "@CGPerezAr", 
-                        weight = "bold",
-                        font_size = Size.DEFAULT.value,
-                        color = Text_colors.HEADER.value,
-                    ),
-                    
-                    align = "start",
-                ),            
->>>>>>> eaa4142a7a28b5b47ff0b5750fa486c029bf05e6
             align = "center",
         ),
         rx.flex(
