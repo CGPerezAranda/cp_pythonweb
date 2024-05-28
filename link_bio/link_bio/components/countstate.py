@@ -12,11 +12,6 @@ class CountState (rx.State):
 
 def giligingle(): 
     return rx.vstack( 
-        rx.image(
-            src=f"/images/Giligingles/Giligingle ({CountState.count}).jpg",
-            width=Size.PHOTO.value,
-            height="auto"
-        ),
         rx.button(
             "Siguiente Giligingle",
             border_radius="1em",
@@ -30,6 +25,11 @@ def giligingle():
             },
             on_click=CountState.increment,
             width="10em",
+        ),
+        rx.image(
+            src=f"/images/Giligingles/Giligingle ({CountState.count}).jpg",
+            width=Size.PHOTO.value,
+            height="auto"
         ),
         align="center",
         width="100%",
