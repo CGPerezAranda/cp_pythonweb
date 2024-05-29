@@ -6,11 +6,14 @@ from link_bio.components.navbar import navbar
 def giliginglesgalery() -> rx.Component:
 
     return rx.center(
-        navbar(),
-        rx.box(
-            rx.h1("Giligingles Galery"),
-            giligingle(),
+        rx.vstack(
+            navbar(),
+            rx.box(
+                rx.text("Giligingles Galery"),
+                giligingle(),
+                width="100%",
+                margin="1em",
+            ),
             width="100%",
-            margin="1em",
         ),
     )
