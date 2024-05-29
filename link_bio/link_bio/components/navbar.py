@@ -23,12 +23,12 @@ def navbar() -> rx.Component:
                 ),
                 href="/",
             ),
-            rx.link(
+        ),
+        rx.link(
                 rx.icon("home"),
                 _hoover = {"color": Text_colors.HEADER.value},
                 href="/",
-            )
-        ),
+            ),
         position="sticky",
         bg = Color.CONTENT.value,
         padding_x = Size.SMALL.value,
