@@ -28,8 +28,8 @@ def index() -> rx.Component:
                 ),        
                 footer(),
             align = "center",
+            text_align = "center",
             width = "100%",
-            text_align = "center"
         )
     )
 
