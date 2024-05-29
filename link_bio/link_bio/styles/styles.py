@@ -31,7 +31,7 @@ class Size(Enum):
     DEFAULT = "1em"
     LARGE = "2em"
     MAX = "4em"
-    PHOTO = "20em"
+    PHOTO = "35em"
 
 class IconSize(Enum):
     SMALL = 15

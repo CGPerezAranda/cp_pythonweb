@@ -12,9 +12,6 @@ def footer() -> rx.Component:
     random_number = rd.randint(1, 26)
     return rx.vstack(
         rx.hstack(
-            giligingle(),
-        ),
-        rx.hstack(
             rx.link(
                 rx.image(
                     src="/github.jpg",
