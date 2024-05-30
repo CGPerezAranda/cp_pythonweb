@@ -40,7 +40,7 @@ def navbar() -> rx.Component:
                 font_family = "Manrope",
                 font_weight = "500",
                 ),
-                href="/giliginglesgallery",
+                href="/giliginglesgallery.py",
             ),
         rx.spacer(),
         rx.link(
