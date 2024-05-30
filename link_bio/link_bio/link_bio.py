@@ -24,11 +24,6 @@ def index() -> rx.Component:
                 links_maquetas(), 
                 separator("Mis Teclados"),
                 links_teclados(),
-                rx.link(
-                "Giligingles Galery",
-                href="/giliginglesgalery",
-                marginRight="1em",
-                ),
                 max_width = styles.MAX_WIDTH,
                 margin_y = styles.Size.LARGE.value
                 ),        

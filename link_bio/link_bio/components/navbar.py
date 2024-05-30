@@ -24,6 +24,25 @@ def navbar() -> rx.Component:
                 href="/",
             ),
         ),
+        rx.spacer(),
+        rx.link(
+                rx.text(
+                "GILIGINGLES",
+                color = Text_colors.IDENT1.value,
+                as_ = "span",
+                font_family = "Manrope",
+                font_weight = "500",
+                ),
+                rx.text(
+                " GALLERY",
+                color = Text_colors.IDENT2.value,
+                as_ = "span",
+                font_family = "Manrope",
+                font_weight = "500",
+                ),
+                href="/giliginglesgallery",
+            ),
+        rx.spacer(),
         rx.link(
                 rx.icon("home"),
                 _hoover = {"color": Text_colors.HEADER.value},
