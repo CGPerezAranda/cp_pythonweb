@@ -55,9 +55,6 @@ def index() -> rx.Component:
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
     style = styles.BASE_STYLE,
-    theme=rx.theme(
-        appearance="light", has_background=True, radius="large", accent_color="teal"
-    )
 )
 app.add_page(index)
 app.add_page(giliginglesgalery, route = "/giliginglesgalery")
