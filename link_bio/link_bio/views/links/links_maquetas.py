@@ -7,6 +7,7 @@ def links_maquetas() -> rx.Component:
         link_button("Dewoitine D.520"," 1/48 Tamiya", "https://imgur.com/gallery/tamiya-1-48-dewoitine-d-520-S0IPNEW"),
         link_button("Macchi C.202 Folgore"," 1/48 Hasegawa", "https://imgur.com/gallery/1-48-macchi-m-c-202-hasegawa-BDcRvQI"),
         link_button("SPAD XIII"," 1/48 Eduard","https://imgur.com/gallery/eduard-1-48-spad-xiii-gFAYOqp"),
+        link_button("Cachonedo Maqueteril", "Giligingles Galery", "/giliginglesgalery"),
         align = "center",
         width = "100%",
         text_align = "center"
