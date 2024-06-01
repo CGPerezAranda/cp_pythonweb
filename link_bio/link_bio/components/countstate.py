@@ -5,14 +5,14 @@ class CountState (rx.State):
     count: int = 1
 
     def increment(self):
-        if self.count == 26:
+        if self.count == 48:
             self.count = 1
         else:
             self.count += 1
 
     def decrement(self):
         if self.count == 1:
-            self.count = 26
+            self.count = 48
         else:
             self.count -= 1
 
