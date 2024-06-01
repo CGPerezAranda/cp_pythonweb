@@ -46,13 +46,13 @@ def giligingle():
                     _hover={
                         "opacity": 0.5,
                     },
-                on_click=CountState.decrement,
-                width="3em",
-                position="sticky",
+                    on_click=CountState.increment,
+                    width="3em",
+                    position="sticky",
                 ),
             ),
             rx.image(
-                    src=f"/images/Giligingles/Giligingle ({CountState.count}).jpg",
+                    src=f"/images/Giligingles/giligingle ({CountState.count}).jpg",
                     width=Size.PHOTO.value,
                     height="auto",
                     align="center",
