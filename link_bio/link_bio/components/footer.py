@@ -20,15 +20,6 @@ def footer() -> rx.Component:
                     href="https://github.com/CGPerezAranda?tab=repositories",
                     is_external=1,
                 ),
-                rx.link(
-                    rx.icon(
-                        "gitlab",
-                        size=iconsize.MAX.value,
-                        color = text_colors.HEADER.value,
-                        ),
-                    href="https://gitlab.com/CGPerezAranda/python-web",
-                    is_external=1,
-                ),
                 rx.icon(    
                     "creative-commons", 
                     size=iconsize.LARGE.value,

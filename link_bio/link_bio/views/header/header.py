@@ -14,7 +14,6 @@ def header() -> rx.Component:
             ),
             rx.vstack(
                 rx.hstack(
-                    link_icon("https://gitlab.com/CGPerezAranda", "gitlab"),
                     link_icon("https://github.com/CGPerezAranda", "github"),
                     link_icon("https://www.linkedin.com/in/carlos-p%C3%A9rez-aranda-b157a834/", "linkedin"),
                 ),
