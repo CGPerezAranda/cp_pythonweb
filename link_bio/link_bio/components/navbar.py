@@ -24,7 +24,9 @@ def navbar() -> rx.Component:
                 href="/",
             ),
         ),
-        rx.spacer(),
+        rx.divider(
+            orientation="vertical",
+            ),
         rx.link(
                 rx.text(
                 "GILIGINGLES",

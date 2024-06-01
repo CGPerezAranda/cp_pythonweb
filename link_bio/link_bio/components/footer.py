@@ -10,42 +10,44 @@ from link_bio.components.countstate import giligingle as giligingle
 
 def footer() -> rx.Component:
     random_number = rd.randint(1, 26)
-    return rx.hstack(
-            rx.link(
-                rx.icon(
-                    "github",
-                    size=iconsize.MAX.value,
-                    color = text_colors.HEADER.value,
-                ),
-                href="https://github.com/CGPerezAranda?tab=repositories",
-                is_external=1
+    return rx.center(
+            rx.hstack(
+                rx.link(
+                    rx.icon(
+                        "github",
+                        size=iconsize.MAX.value,
+                        color = text_colors.HEADER.value,
+                    ),
+                    href="https://github.com/CGPerezAranda?tab=repositories",
+                    is_external=1,
                 ),
                 rx.link(
                     rx.icon(
                         "gitlab",
                         size=iconsize.MAX.value,
                         color = text_colors.HEADER.value,
-                    ),
-                href="https://gitlab.com/CGPerezAranda/python-web",
-                is_external=1,
+                        ),
+                    href="https://gitlab.com/CGPerezAranda/python-web",
+                    is_external=1,
                 ),
-            rx.icon(    
-                "creative-commons", 
-                size=iconsize.LARGE.value,
-                color = text_colors.HEADER.value,
+                rx.icon(    
+                    "creative-commons", 
+                    size=iconsize.LARGE.value,
+                    color = text_colors.HEADER.value,
                 ),
-            rx.icon(    
-                "copyright", 
-                size=iconsize.LARGE.value,
-                color = text_colors.HEADER.value,
+                rx.icon(    
+                    "copyright", 
+                    size=iconsize.LARGE.value,
+                    color = text_colors.HEADER.value,
                 ),
-            rx.text(
-                " 2024 - CP",
-                font_size=size.MEDIUM.value,
-                font_family="Manrope",
-                color=text_colors.HEADER.value,
-            ),  
-            align="center",     
+                rx.text(
+                    "2024 - CP",
+                    font_size=size.MEDIUM.value,
+                    font_family="Manrope",
+                    color=text_colors.HEADER.value,
+                ),  
+            ),
+        margin_y=size.LARGE.value,
         ),
 
 
