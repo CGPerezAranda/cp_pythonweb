@@ -9,7 +9,6 @@ from link_bio.components.countstate import giligingle as giligingle
 
 
 def footer() -> rx.Component:
-    random_number = rd.randint(1, 26)
     return rx.center(
             rx.hstack(
                 rx.link(
@@ -47,7 +46,8 @@ def footer() -> rx.Component:
                     color=text_colors.HEADER.value,
                 ),  
             ),
-        margin_y=size.LARGE.value,
+        bottom = "0",
+        padding = size.DEFAULT.value,
         ),
 
 

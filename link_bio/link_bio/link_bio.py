@@ -6,7 +6,7 @@ from link_bio.views.links.links_teclados import links_teclados
 from link_bio.components.separator import separator
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles
-from link_bio.styles.styles import Size as size
+from link_bio.styles.styles import Size as Size
 from link_bio.components.giliginglesgalery import giliginglesgalery
 from link_bio.styles.colors import Color as color
 
@@ -18,8 +18,8 @@ def index() -> rx.Component:
 
     return rx.center(
         rx.flex(
-        navbar(),       
-        rx.flex(                             
+        navbar(), 
+        rx.box(                                   
             rx.vstack(
                 header(),
                 separator("Mis maquetas"),
@@ -27,22 +27,18 @@ def index() -> rx.Component:
                 separator("Mis Teclados"),
                 links_teclados(),
                 max_width = styles.MAX_WIDTH,
-                margin_y = styles.Size.LARGE.value,
-            ),        
-            width = "30%",
-            background_color = color.BACKGROUND.value,
-            border_radius = size.DEFAULT.value, 
-            margin = size.LARGE.value,
-            padding_x = size.LARGE.value,
-            padding_y = size.VVSMALL.value,
-            direction="column",
-            align = "start",
-            ),
+                margin_y = styles.Size.LARGE.value,                
+            ),   
+            direction = "column", 
+            margin = Size.LARGE.value,
+            background = color.BACKGROUND.value,
+            padding = Size.DEFAULT.value,
+            border_radius = Size.SMALL.value,            
+        ),
         footer(),
         background = "center/cover url('/background.jpg')",
         width="100%",
-        height="100%",
-        position="fixed",
+        height="100vh",
         z_index = "998",
         top = "0",
         direction = "column",

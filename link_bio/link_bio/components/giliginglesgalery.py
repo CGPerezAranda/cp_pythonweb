@@ -29,6 +29,7 @@ def giliginglesgalery() -> rx.Component:
             direction = "column",
             align = "center",
         ),
+        
     )
         
     
