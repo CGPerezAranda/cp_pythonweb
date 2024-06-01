@@ -46,8 +46,9 @@ def footer() -> rx.Component:
                     color=text_colors.HEADER.value,
                 ),  
             ),
-        bottom = "0",
         padding = size.DEFAULT.value,
+        z_index = 1,
+        margin_top = "auto",
         ),
 
 

@@ -38,7 +38,7 @@ def index() -> rx.Component:
         footer(),
         background = "center/cover url('/background.jpg')",
         width="100%",
-        height="100vh",
+        min_height="100vh",
         z_index = "998",
         top = "0",
         direction = "column",

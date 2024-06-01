@@ -12,24 +12,23 @@ def giliginglesgalery() -> rx.Component:
     return rx.center(
         rx.flex(
             navbar(),
-            rx.vstack(           
-                rx.box(
-                    giligingle(),
-                    width="100%",
-                    margin=Size.MAX.value,
+            rx.flex(
+                rx.vstack(           
+                    rx.box(
+                        giligingle(),
+                        margin=Size.MAX.value,
+                        ),
                     ),
-                ),
+                width="100%",
+                direction="column",
+                align = "center",
+            ),
             footer(),
+            direction="column",
+            min_height="100vh",
             background = "center/cover url('/background.jpg')",
             width="100%",
-            height="100%",
-            position="fixed",
-            z_index = "998",
-            top = "0",
-            direction = "column",
-            align = "center",
-        ),
-        
+        )
     )
         
     
