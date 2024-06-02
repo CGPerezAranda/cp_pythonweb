@@ -1,6 +1,10 @@
 
 
-tbm3 = ["https://i.imgur.com/Zueckgk.jpeg","https://i.imgur.com/GXGqGCV.jpeg","https://i.imgur.com/GXGqGCV.jpeg",
+from enum import Enum
+
+
+class subject(Enum):
+        TBM3 = ["https://i.imgur.com/Zueckgk.jpeg","https://i.imgur.com/GXGqGCV.jpeg","https://i.imgur.com/GXGqGCV.jpeg",
         "https://i.imgur.com/9KWGtVw.jpeg","https://i.imgur.com/9KWGtVw.jpeg","https://i.imgur.com/byCJrF5.jpeg",
         "https://i.imgur.com/8DaQK4v.jpeg","https://i.imgur.com/RcvJZLN.jpeg","https://i.imgur.com/buNYhgh.jpeg",
         "https://i.imgur.com/GrwEFgq.jpeg","https://i.imgur.com/S350cNQ.jpeg","https://i.imgur.com/Qjey7G1.jpeg",
@@ -17,8 +21,14 @@ tbm3 = ["https://i.imgur.com/Zueckgk.jpeg","https://i.imgur.com/GXGqGCV.jpeg","h
         "https://i.imgur.com/vGbOrkE.jpeg","https://i.imgur.com/vGbOrkE.jpeg","https://i.imgur.com/vGbOrkE.jpeg",
         "https://i.imgur.com/RllEzIm.jpeg","https://i.imgur.com/hFeTb8Z.jpeg","https://i.imgur.com/esCeiuF.jpeg",
         "https://i.imgur.com/avnVSxt.jpeg","https://i.imgur.com/oV0myCz.jpeg"]
+        D520 = ["https://imgur.com/gallery/tamiya-1-48-dewoitine-d-520-S0IPNEW"]
+        C202 = ["https://imgur.com/gallery/1-48-macchi-m-c-202-hasegawa-BDcRvQI"]
+        SPAD = ["https://imgur.com/gallery/eduard-1-48-spad-xiii-gFAYOqp"]
 
 
-def get_link(var :str, index :int) -> str:
-    
-    return var[index]
+
+
+
+
+def get_link(subject :subject, index :int) -> str:
+        return subject.value[index]
