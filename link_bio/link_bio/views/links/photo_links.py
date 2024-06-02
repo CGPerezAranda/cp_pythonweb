@@ -17,3 +17,8 @@ tbm3 = ["https://i.imgur.com/Zueckgk.jpeg","https://i.imgur.com/GXGqGCV.jpeg","h
         "https://i.imgur.com/vGbOrkE.jpeg","https://i.imgur.com/vGbOrkE.jpeg","https://i.imgur.com/vGbOrkE.jpeg",
         "https://i.imgur.com/RllEzIm.jpeg","https://i.imgur.com/hFeTb8Z.jpeg","https://i.imgur.com/esCeiuF.jpeg",
         "https://i.imgur.com/avnVSxt.jpeg","https://i.imgur.com/oV0myCz.jpeg"]
+
+
+def get_link(var :str, index :int) -> str:
+    
+    return var[index]
