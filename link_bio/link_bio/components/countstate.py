@@ -5,23 +5,23 @@ import link_bio.views.links.photo_links as photo_links
 
 class CountState (rx.State):
     count: int = 1
-    tbm3_link = photo_links.TBM3[count-1]
+    index_link = photo_links.TBM3[count-1]
 
     def increment(self, max: int):
         if self.count == max:
             self.count = 1
-            self.tbm3_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.TBM3[self.count-1]
         else:
             self.count += 1
-            self.tbm3_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.TBM3[self.count-1]
 
     def decrement(self, max: int):
         if self.count == 1:
             self.count = max
-            self.tbm3_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.TBM3[self.count-1]
         else:
             self.count -= 1
-            self.tbm3_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.TBM3[self.count-1]
     
     @rx.var
     def index(self) -> int: 
@@ -110,15 +110,14 @@ def photosTBM3() -> rx.Component:
                 ),
             ),
             rx.image(    
-                src=CountState.tbm3_link,
-                width="100vh",
-                height="auto",
+                src=CountState.index_link,
                 align="center",
             ),
             rx.box(
                 rx.heading(f"CountState.count: {CountState.count}"),
             ),
             width="100vh",
+            height="auto",
             align="center",
         )
     

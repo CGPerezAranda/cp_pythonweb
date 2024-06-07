@@ -1,7 +1,7 @@
 import reflex as rx
 
 # This file contains the links to the photos of the models
-TBM3 = [f"https://i.imgur.com/Zueckgk.jpeg",f"https://i.imgur.com/Zueckgk.jpeg",f"https://i.imgur.com/GXGqGCV.jpeg",
+TBM3 = [f"https://i.imgur.com/Zueckgk.jpeg",f"https://i.imgur.com/GXGqGCV.jpeg",
         f"https://i.imgur.com/9KWGtVw.jpeg",f"https://i.imgur.com/byCJrF5.jpeg",f"https://i.imgur.com/8DaQK4v.jpeg",
         f"https://i.imgur.com/RcvJZLN.jpeg",f"https://i.imgur.com/buNYhgh.jpeg",f"https://i.imgur.com/GrwEFgq.jpeg",
         f"https://i.imgur.com/S350cNQ.jpeg",f"https://i.imgur.com/Qjey7G1.jpeg",f"https://i.imgur.com/wCwPRmz.jpeg",

@@ -16,7 +16,8 @@ def gallerytbm3() -> rx.Component:
                 rx.vstack(           
                     rx.box(
                         photosTBM3(),
-                        margin=Size.MAX.value,
+                        margin=Size.DEFAULT.value,
+                        width="100%",
                         ),
                     ),  
                 width="100%",
