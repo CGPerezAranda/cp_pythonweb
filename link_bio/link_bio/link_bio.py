@@ -7,8 +7,10 @@ from link_bio.components.separator import separator
 from link_bio.components.footer import footer
 import link_bio.styles.styles as styles
 from link_bio.styles.styles import Size as Size
-from link_bio.components.giliginglesgalery import giliginglesgalery
+from link_bio.components.giliginglesgallery import giliginglesgallery
+from link_bio.components.gallerytbm3 import gallerytbm3
 from link_bio.styles.colors import Color as color
+
 
 
 class State(rx.State):
@@ -53,5 +55,7 @@ app = rx.App(
     style = styles.BASE_STYLE,
 )
 app.add_page(index)
-app.add_page(giliginglesgalery, route = "/giliginglesgalery")
+app.add_page(gallerytbm3, route = "/gallerytbm3")
+app.add_page(giliginglesgallery, route = "/giliginglesgalery")
+
  
