@@ -1,13 +1,15 @@
 import reflex as rx
 from link_bio.components.navbar import navbar
-from link_bio.components.countstate import photosTBM3 as photosTBM3
+from link_bio.components.countstate import photos as photos
 from link_bio.components.footer import footer
 from link_bio.styles.styles import Size as Size
 from link_bio.styles.colors import Text_colors as Text_colors
-
-
+from link_bio.components.countstate import CountState as CountState
 
 def gallerytbm3() -> rx.Component:
+    
+    subject = "TBM3"
+    CountState.setSubject(subject)
 
     return rx.center(
         rx.flex(
@@ -15,7 +17,7 @@ def gallerytbm3() -> rx.Component:
             rx.flex(
                 rx.vstack(           
                     rx.box(
-                        photosTBM3(),
+                        photos(),
                         margin=Size.DEFAULT.value,
                         width="100%",
                         ),

@@ -1,5 +1,17 @@
 import reflex as rx
 
+def len_photos(sub: str) -> int:
+    if sub == "TBM3":
+        return len(TBM3)
+    elif sub == "C202":
+        return len(C202)
+    elif sub == "D520":
+        return len(D520)
+    elif sub == "SPAD":
+        return len(SPAD)
+    else:
+        return 0
+
 # This file contains the links to the photos of the models
 TBM3 = [f"https://i.imgur.com/Zueckgk.jpeg",f"https://i.imgur.com/GXGqGCV.jpeg",
         f"https://i.imgur.com/9KWGtVw.jpeg",f"https://i.imgur.com/byCJrF5.jpeg",f"https://i.imgur.com/8DaQK4v.jpeg",

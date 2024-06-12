@@ -6,22 +6,28 @@ import link_bio.views.links.photo_links as photo_links
 class CountState (rx.State):
     count: int = 1
     index_link = photo_links.TBM3[count-1]
+    subject = "TBM3"
+
+
+    def setSubject(self, subject: str):
+        self.subject = subject
+        self.index_link = photo_links.subject[self.count-1]
 
     def increment(self, max: int):
         if self.count == max:
             self.count = 1
-            self.index_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.subject[self.count-1]
         else:
             self.count += 1
-            self.index_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.subject[self.count-1]
 
     def decrement(self, max: int):
         if self.count == 1:
             self.count = max
-            self.index_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.subject[self.count-1]
         else:
             self.count -= 1
-            self.index_link = photo_links.TBM3[self.count-1]
+            self.index_link = photo_links.subject[self.count-1]
     
     @rx.var
     def index(self) -> int: 
@@ -74,8 +80,9 @@ def giligingle() -> rx.Component:
         )
     )
 
-def photosTBM3() -> rx.Component:
-    max = len(photo_links.TBM3)
+def photos() -> rx.Component:
+    sub = f"{CountState.subject}"
+    max = photo_links.len_photos(sub)
     return rx.vstack(
             rx.hstack( 
                 rx.button(
